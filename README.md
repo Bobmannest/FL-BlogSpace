@@ -1,6 +1,6 @@
 # FL BlogSpace
 
-A Python and Flask-based web application that allows users to register, log in, and create persistent blog posts.  
+A Python and Flask-based web application that allows users to register, log in and create persistent blog posts.  
 This project demonstrates core backend web development concepts including routing and authentication using Python Flask and database integration using SQLite.
 
 ## Features
