@@ -2,14 +2,16 @@
 
 {% block content %}
 
-<h2>Register</h2>
+<div class="card">
+    <h2>Create account</h2>
 
-<form method="post">
-    <label>Username</label>
-    <input name="username">
-    <label>Password</label>
-    <input type="password" name="password">
-    <button type="submit">Create account</button>
-</form>
+    <form method="post">
+        <label>Username</label>
+        <input name="username">
+        <label>Password</label>
+        <input type="password" name="password">
+        <button type="submit">Register</button>
+    </form>
+</div>
 
 {% endblock %}

@@ -2,14 +2,15 @@
 
 {% block content %}
 
-<h2>New Post</h2>
-
-<form method="post">
-    <label>Title</label>
-    <input name="title">
-    <label>Body</label>
-    <textarea name="body" rows="6"></textarea>
-    <button type="submit">Post</button>
-</form>
+<div class="card">
+    <h2>Write a post</h2>
+    <form method="post">
+        <label>Title</label>
+        <input name="title" placeholder="Something interesting...">
+        <label>Body</label>
+        <textarea name="body" rows="7" placeholder="Write your thoughts..."></textarea>
+        <button type="submit">Publish</button>
+    </form>
+</div>
 
 {% endblock %}

@@ -2,18 +2,21 @@
 
 {% block content %}
 
-<h2>Posts</h2>
+<h2 class="page-title">Recent Posts</h2>
 
 {% for post in posts %}
-    <div style="border-bottom: 1px solid #ddd; margin-bottom: 15px;">
-        <h3>{{ post['title'] }}</h3>
-        <small>
-            by {{ post['username'] }} | {{ post['created'] }}
-        </small>
-        <p>{{ post['body'] }}</p>
-    </div>
+<div class="card">
+    <h3 style="margin-bottom: 6px;">{{ post['title'] }}</h3>
+    <small>
+        by <b>{{ post['username'] }}</b> • {{ post['created'] }}
+    </small>
+    <p style="margin-top: 10px; line-height: 1.5;">
+        {{ post['body'] }}
+    </p>
+</div>
 {% else %}
-    <p>No posts yet.</p>
+<div class="card">
+    <p>No posts yet. Use <b>New Post</b> to make a post</p>
+</div>
 {% endfor %}
-
 {% endblock %}

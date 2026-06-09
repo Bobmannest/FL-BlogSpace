@@ -4,7 +4,7 @@ from flask import Flask
 
 #'flask --app flask_app:create_app run' to run in the Terminal
 #'flask --app flask_app:create_app init-db' to initialise database
-#Go to http://127.0.0.1:5000/ to see output
+#Go to http://127.0.0.1:5000 to see output
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
 
